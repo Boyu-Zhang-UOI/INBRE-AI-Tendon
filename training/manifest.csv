@@ -1,0 +1,201 @@
+name,scan,slice,source,n_prelabels
+P21_1_rec000006,P21_1,6,rawdata/P21_1M/P21_1M/P21(1)_rec00000006.tif,32
+P21_1_rec000019,P21_1,19,rawdata/P21_1M/P21_1M/P21(1)_rec00000019.tif,30
+P21_1_rec000045,P21_1,45,rawdata/P21_1M/P21_1M/P21(1)_rec00000045.tif,37
+P21_1_rec000060,P21_1,60,rawdata/P21_1M/P21_1M/P21(1)_rec00000060.tif,38
+P21_1_rec000078,P21_1,78,rawdata/P21_1M/P21_1M/P21(1)_rec00000078.tif,38
+P21_1_rec000092,P21_1,92,rawdata/P21_1M/P21_1M/P21(1)_rec00000092.tif,35
+P21_1_rec000108,P21_1,108,rawdata/P21_1M/P21_1M/P21(1)_rec00000108.tif,40
+P21_1_rec000123,P21_1,123,rawdata/P21_1M/P21_1M/P21(1)_rec00000123.tif,42
+P21_1_rec000150,P21_1,150,rawdata/P21_1M/P21_1M/P21(1)_rec00000150.tif,35
+P21_1_rec000154,P21_1,154,rawdata/P21_1M/P21_1M/P21(1)_rec00000154.tif,35
+P21_1_rec000169,P21_1,169,rawdata/P21_1M/P21_1M/P21(1)_rec00000169.tif,34
+P21_1_rec000187,P21_1,187,rawdata/P21_1M/P21_1M/P21(1)_rec00000187.tif,38
+P21_1_rec000207,P21_1,207,rawdata/P21_1M/P21_1M/P21(1)_rec00000207.tif,39
+P21_1_rec000224,P21_1,224,rawdata/P21_1M/P21_1M/P21(1)_rec00000224.tif,38
+P21_1_rec000233,P21_1,233,rawdata/P21_1M/P21_1M/P21(1)_rec00000233.tif,32
+P21_1_rec000256,P21_1,256,rawdata/P21_1M/P21_1M/P21(1)_rec00000256.tif,36
+P21_1_rec000279,P21_1,279,rawdata/P21_1M/P21_1M/P21(1)_rec00000279.tif,34
+P21_1_rec000289,P21_1,289,rawdata/P21_1M/P21_1M/P21(1)_rec00000289.tif,36
+P21_1_rec000312,P21_1,312,rawdata/P21_1M/P21_1M/P21(1)_rec00000312.tif,39
+P21_1_rec000322,P21_1,322,rawdata/P21_1M/P21_1M/P21(1)_rec00000322.tif,37
+P21_1_rec000330,P21_1,330,rawdata/P21_1M/P21_1M/P21(1)_rec00000330.tif,35
+P21_1_rec000351,P21_1,351,rawdata/P21_1M/P21_1M/P21(1)_rec00000351.tif,31
+P21_1_rec000375,P21_1,375,rawdata/P21_1M/P21_1M/P21(1)_rec00000375.tif,33
+P21_1_rec000389,P21_1,389,rawdata/P21_1M/P21_1M/P21(1)_rec00000389.tif,34
+P21_1_rec000403,P21_1,403,rawdata/P21_1M/P21_1M/P21(1)_rec00000403.tif,37
+P21_1_rec000415,P21_1,415,rawdata/P21_1M/P21_1M/P21(1)_rec00000415.tif,35
+P21_1_rec000433,P21_1,433,rawdata/P21_1M/P21_1M/P21(1)_rec00000433.tif,40
+P21_1_rec000453,P21_1,453,rawdata/P21_1M/P21_1M/P21(1)_rec00000453.tif,36
+P21_1_rec000462,P21_1,462,rawdata/P21_1M/P21_1M/P21(1)_rec00000462.tif,34
+P21_1_rec000478,P21_1,478,rawdata/P21_1M/P21_1M/P21(1)_rec00000478.tif,37
+P21_1_rec000504,P21_1,504,rawdata/P21_1M/P21_1M/P21(1)_rec00000504.tif,39
+P21_1_rec000511,P21_1,511,rawdata/P21_1M/P21_1M/P21(1)_rec00000511.tif,40
+P21_1_rec000535,P21_1,535,rawdata/P21_1M/P21_1M/P21(1)_rec00000535.tif,41
+P21_1_rec000551,P21_1,551,rawdata/P21_1M/P21_1M/P21(1)_rec00000551.tif,39
+P21_1_rec000564,P21_1,564,rawdata/P21_1M/P21_1M/P21(1)_rec00000564.tif,40
+P21_1_rec000573,P21_1,573,rawdata/P21_1M/P21_1M/P21(1)_rec00000573.tif,43
+P21_1_rec000602,P21_1,602,rawdata/P21_1M/P21_1M/P21(1)_rec00000602.tif,41
+P21_1_rec000607,P21_1,607,rawdata/P21_1M/P21_1M/P21(1)_rec00000607.tif,43
+P21_1_rec000632,P21_1,632,rawdata/P21_1M/P21_1M/P21(1)_rec00000632.tif,38
+P21_1_rec000638,P21_1,638,rawdata/P21_1M/P21_1M/P21(1)_rec00000638.tif,42
+P21_1_rec000661,P21_1,661,rawdata/P21_1M/P21_1M/P21(1)_rec00000661.tif,37
+P21_1_rec000679,P21_1,679,rawdata/P21_1M/P21_1M/P21(1)_rec00000679.tif,41
+P21_1_rec000690,P21_1,690,rawdata/P21_1M/P21_1M/P21(1)_rec00000690.tif,40
+P21_1_rec000702,P21_1,702,rawdata/P21_1M/P21_1M/P21(1)_rec00000702.tif,42
+P21_1_rec000717,P21_1,717,rawdata/P21_1M/P21_1M/P21(1)_rec00000717.tif,41
+P21_4_rec000009,P21_4,9,rawdata/P21_4M/P21_4M/P21(4)_rec00000009.tif,44
+P21_4_rec000029,P21_4,29,rawdata/P21_4M/P21_4M/P21(4)_rec00000029.tif,43
+P21_4_rec000042,P21_4,42,rawdata/P21_4M/P21_4M/P21(4)_rec00000042.tif,46
+P21_4_rec000069,P21_4,69,rawdata/P21_4M/P21_4M/P21(4)_rec00000069.tif,44
+P21_4_rec000084,P21_4,84,rawdata/P21_4M/P21_4M/P21(4)_rec00000084.tif,45
+P21_4_rec000113,P21_4,113,rawdata/P21_4M/P21_4M/P21(4)_rec00000113.tif,43
+P21_4_rec000128,P21_4,128,rawdata/P21_4M/P21_4M/P21(4)_rec00000128.tif,50
+P21_4_rec000153,P21_4,153,rawdata/P21_4M/P21_4M/P21(4)_rec00000153.tif,50
+P21_4_rec000169,P21_4,169,rawdata/P21_4M/P21_4M/P21(4)_rec00000169.tif,43
+P21_4_rec000182,P21_4,182,rawdata/P21_4M/P21_4M/P21(4)_rec00000182.tif,41
+P21_4_rec000207,P21_4,207,rawdata/P21_4M/P21_4M/P21(4)_rec00000207.tif,41
+P21_4_rec000226,P21_4,226,rawdata/P21_4M/P21_4M/P21(4)_rec00000226.tif,47
+P21_4_rec000240,P21_4,240,rawdata/P21_4M/P21_4M/P21(4)_rec00000240.tif,47
+P21_4_rec000261,P21_4,261,rawdata/P21_4M/P21_4M/P21(4)_rec00000261.tif,46
+P21_4_rec000274,P21_4,274,rawdata/P21_4M/P21_4M/P21(4)_rec00000274.tif,49
+P21_4_rec000296,P21_4,296,rawdata/P21_4M/P21_4M/P21(4)_rec00000296.tif,41
+P21_4_rec000327,P21_4,327,rawdata/P21_4M/P21_4M/P21(4)_rec00000327.tif,47
+P21_4_rec000336,P21_4,336,rawdata/P21_4M/P21_4M/P21(4)_rec00000336.tif,48
+P21_4_rec000353,P21_4,353,rawdata/P21_4M/P21_4M/P21(4)_rec00000353.tif,42
+P21_4_rec000381,P21_4,381,rawdata/P21_4M/P21_4M/P21(4)_rec00000381.tif,38
+P21_4_rec000398,P21_4,398,rawdata/P21_4M/P21_4M/P21(4)_rec00000398.tif,37
+P21_4_rec000413,P21_4,413,rawdata/P21_4M/P21_4M/P21(4)_rec00000413.tif,39
+P21_4_rec000443,P21_4,443,rawdata/P21_4M/P21_4M/P21(4)_rec00000443.tif,47
+P21_4_rec000451,P21_4,451,rawdata/P21_4M/P21_4M/P21(4)_rec00000451.tif,40
+P21_4_rec000473,P21_4,473,rawdata/P21_4M/P21_4M/P21(4)_rec00000473.tif,41
+P21_4_rec000483,P21_4,483,rawdata/P21_4M/P21_4M/P21(4)_rec00000483.tif,44
+P21_4_rec000509,P21_4,509,rawdata/P21_4M/P21_4M/P21(4)_rec00000509.tif,38
+P21_4_rec000522,P21_4,522,rawdata/P21_4M/P21_4M/P21(4)_rec00000522.tif,43
+P21_4_rec000550,P21_4,550,rawdata/P21_4M/P21_4M/P21(4)_rec00000550.tif,43
+P21_4_rec000571,P21_4,571,rawdata/P21_4M/P21_4M/P21(4)_rec00000571.tif,40
+P21_4_rec000586,P21_4,586,rawdata/P21_4M/P21_4M/P21(4)_rec00000586.tif,42
+P21_4_rec000599,P21_4,599,rawdata/P21_4M/P21_4M/P21(4)_rec00000599.tif,39
+P21_4_rec000622,P21_4,622,rawdata/P21_4M/P21_4M/P21(4)_rec00000622.tif,37
+P21_4_rec000645,P21_4,645,rawdata/P21_4M/P21_4M/P21(4)_rec00000645.tif,37
+P21_4_rec000660,P21_4,660,rawdata/P21_4M/P21_4M/P21(4)_rec00000660.tif,43
+P21_4_rec000688,P21_4,688,rawdata/P21_4M/P21_4M/P21(4)_rec00000688.tif,44
+P21_4_rec000704,P21_4,704,rawdata/P21_4M/P21_4M/P21(4)_rec00000704.tif,45
+P21_4_rec000725,P21_4,725,rawdata/P21_4M/P21_4M/P21(4)_rec00000725.tif,43
+P21_4_rec000734,P21_4,734,rawdata/P21_4M/P21_4M/P21(4)_rec00000734.tif,41
+P21_4_rec000757,P21_4,757,rawdata/P21_4M/P21_4M/P21(4)_rec00000757.tif,42
+P21_4_rec000772,P21_4,772,rawdata/P21_4M/P21_4M/P21(4)_rec00000772.tif,41
+P21_4_rec000794,P21_4,794,rawdata/P21_4M/P21_4M/P21(4)_rec00000794.tif,40
+P21_4_rec000823,P21_4,823,rawdata/P21_4M/P21_4M/P21(4)_rec00000823.tif,36
+P21_4_rec000842,P21_4,842,rawdata/P21_4M/P21_4M/P21(4)_rec00000842.tif,37
+P21_4_rec000852,P21_4,852,rawdata/P21_4M/P21_4M/P21(4)_rec00000852.tif,38
+P50_1_rec000211,P50_1,211,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000211.tif,44
+P50_1_rec000219,P50_1,219,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000219.tif,45
+P50_1_rec000226,P50_1,226,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000226.tif,44
+P50_1_rec000232,P50_1,232,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000232.tif,41
+P50_1_rec000239,P50_1,239,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000239.tif,48
+P50_1_rec000253,P50_1,253,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000253.tif,43
+P50_1_rec000256,P50_1,256,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000256.tif,43
+P50_1_rec000263,P50_1,263,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000263.tif,44
+P50_1_rec000272,P50_1,272,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000272.tif,47
+P50_1_rec000281,P50_1,281,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000281.tif,45
+P50_1_rec000290,P50_1,290,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000290.tif,43
+P50_1_rec000518,P50_1,518,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000518.tif,43
+P50_1_rec000528,P50_1,528,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000528.tif,42
+P50_1_rec000555,P50_1,555,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000555.tif,48
+P50_1_rec000573,P50_1,573,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000573.tif,48
+P50_1_rec000588,P50_1,588,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000588.tif,44
+P50_1_rec000593,P50_1,593,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000593.tif,47
+P50_1_rec000597,P50_1,597,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000597.tif,46
+P50_1_rec000607,P50_1,607,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000607.tif,50
+P50_1_rec000618,P50_1,618,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000618.tif,54
+P50_1_rec000627,P50_1,627,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000627.tif,47
+P50_1_rec000631,P50_1,631,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000631.tif,50
+P50_1_rec000644,P50_1,644,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000644.tif,54
+P50_1_rec000666,P50_1,666,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000666.tif,49
+P50_1_rec000674,P50_1,674,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000674.tif,51
+P50_1_rec000700,P50_1,700,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000700.tif,46
+P50_1_rec000702,P50_1,702,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000702.tif,48
+P50_1_rec000726,P50_1,726,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000726.tif,49
+P50_1_rec000738,P50_1,738,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000738.tif,47
+P50_1_rec000754,P50_1,754,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000754.tif,47
+P50_1_rec000776,P50_1,776,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000776.tif,52
+P50_1_rec000790,P50_1,790,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000790.tif,43
+P50_1_rec000804,P50_1,804,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000804.tif,43
+P50_1_rec000826,P50_1,826,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000826.tif,47
+P50_1_rec000836,P50_1,836,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000836.tif,47
+P50_1_rec000850,P50_1,850,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000850.tif,42
+P50_1_rec000876,P50_1,876,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000876.tif,54
+P50_1_rec000896,P50_1,896,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000896.tif,49
+P50_1_rec000898,P50_1,898,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000898.tif,47
+P50_1_rec000916,P50_1,916,rawdata/P50_1/P50_1/P50_1_HRScan_rec00000916.tif,47
+P50_3sr_rec000140,P50_3sr,140,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000140.png,47
+P50_3sr_rec000160,P50_3sr,160,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000160.png,44
+P50_3sr_rec000165,P50_3sr,165,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000165.png,46
+P50_3sr_rec000177,P50_3sr,177,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000177.png,50
+P50_3sr_rec000187,P50_3sr,187,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000187.png,51
+P50_3sr_rec000203,P50_3sr,203,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000203.png,57
+P50_3sr_rec000222,P50_3sr,222,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000222.png,53
+P50_3sr_rec000227,P50_3sr,227,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000227.png,52
+P50_3sr_rec000240,P50_3sr,240,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000240.png,51
+P50_3sr_rec000263,P50_3sr,263,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000263.png,53
+P50_3sr_rec000272,P50_3sr,272,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000272.png,55
+P50_3sr_rec000279,P50_3sr,279,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000279.png,49
+P50_3sr_rec000303,P50_3sr,303,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000303.png,53
+P50_3sr_rec000312,P50_3sr,312,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000312.png,53
+P50_3sr_rec000329,P50_3sr,329,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000329.png,58
+P50_3sr_rec000333,P50_3sr,333,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000333.png,58
+P50_3sr_rec000346,P50_3sr,346,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000346.png,53
+P50_3sr_rec000367,P50_3sr,367,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000367.png,54
+P50_3sr_rec000377,P50_3sr,377,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000377.png,54
+P50_3sr_rec000391,P50_3sr,391,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000391.png,49
+P50_3sr_rec000398,P50_3sr,398,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000398.png,57
+P50_3sr_rec000413,P50_3sr,413,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000413.png,61
+P50_3sr_rec000430,P50_3sr,430,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000430.png,61
+P50_3sr_rec000444,P50_3sr,444,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000444.png,58
+P50_3sr_rec000454,P50_3sr,454,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000454.png,52
+P50_3sr_rec000464,P50_3sr,464,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000464.png,50
+P50_3sr_rec000482,P50_3sr,482,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000482.png,53
+P50_3sr_rec000499,P50_3sr,499,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000499.png,49
+P50_3sr_rec000511,P50_3sr,511,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000511.png,57
+P50_3sr_rec000524,P50_3sr,524,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000524.png,59
+P50_3sr_rec000530,P50_3sr,530,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000530.png,55
+P50_3sr_rec000551,P50_3sr,551,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000551.png,54
+P50_3sr_rec000557,P50_3sr,557,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000557.png,58
+P50_3sr_rec000572,P50_3sr,572,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000572.png,55
+P50_3sr_rec000589,P50_3sr,589,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000589.png,53
+P50_3sr_rec000602,P50_3sr,602,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000602.png,62
+P50_3sr_rec000610,P50_3sr,610,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000610.png,59
+P50_3sr_rec000625,P50_3sr,625,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000625.png,54
+P50_3sr_rec000639,P50_3sr,639,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000639.png,61
+P50_3sr_rec000651,P50_3sr,651,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000651.png,57
+P50_3sr_rec000658,P50_3sr,658,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000658.png,58
+P50_3sr_rec000673,P50_3sr,673,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000673.png,46
+P50_3sr_rec000686,P50_3sr,686,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000686.png,55
+P50_3sr_rec000697,P50_3sr,697,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000697.png,56
+P50_3sr_rec000714,P50_3sr,714,rawdata/OneDrive_2026-08-14_(2)/P50 3 Prox Tail SR Reconstructed/P50_3_Tail_Proximal-Real_rec_Tra00000714.png,51
+P21_3_rec000205,P21_3,205,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000205.tif,43
+P21_3_rec000215,P21_3,215,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000215.tif,39
+P21_3_rec000221,P21_3,221,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000221.tif,32
+P21_3_rec000225,P21_3,225,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000225.tif,34
+P21_3_rec000234,P21_3,234,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000234.tif,38
+P21_3_rec000238,P21_3,238,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000238.tif,36
+P21_3_rec000243,P21_3,243,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000243.tif,38
+P21_3_rec000250,P21_3,250,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000250.tif,37
+P21_3_rec000261,P21_3,261,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000261.tif,41
+P21_3_rec000268,P21_3,268,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000268.tif,37
+P21_3_rec000269,P21_3,269,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000269.tif,42
+P21_3_rec000277,P21_3,277,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000277.tif,35
+P21_3_rec000282,P21_3,282,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000282.tif,35
+P21_3_rec000289,P21_3,289,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000289.tif,35
+P21_3_rec000297,P21_3,297,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000297.tif,40
+P21_3_rec000302,P21_3,302,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000302.tif,37
+P21_3_rec000312,P21_3,312,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000312.tif,39
+P21_3_rec000316,P21_3,316,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000316.tif,39
+P21_3_rec000323,P21_3,323,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000323.tif,39
+P21_3_rec000333,P21_3,333,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000333.tif,45
+P21_3_rec000337,P21_3,337,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000337.tif,44
+P21_3_rec000342,P21_3,342,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000342.tif,40
+P21_3_rec000351,P21_3,351,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000351.tif,40
+P21_3_rec000355,P21_3,355,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00000355.tif,42
+P21_3_rec001332,P21_3,1332,rawdata/OneDrive_2026-08-14_(1)/P21 3 Prox Tail HR/P21 3 Prox Tail HR_rec00001332.tif,38
