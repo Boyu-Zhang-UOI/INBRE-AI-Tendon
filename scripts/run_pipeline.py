@@ -163,16 +163,22 @@ inference_state = sam2_model.init_state(video_path=INTERMEDIATE, offload_video_t
 sam2_model.reset_state(inference_state)
 INTERMEDIATE_PATHS = sorted(
     sv.list_files_with_extensions(INTERMEDIATE, extensions=["jpg", "jpeg"]))
+FRAME_IDX = 0
+# Detection runs at full precision, outside the SAM2 autocast context, so the seed
+# boxes are exactly those of the validated detector (validation/tendon_eval.py).
+_tf32 = (torch.backends.cuda.matmul.allow_tf32, torch.backends.cudnn.allow_tf32)
+torch.backends.cuda.matmul.allow_tf32, torch.backends.cudnn.allow_tf32 = False, True   # PyTorch defaults, as in validation
+with torch.no_grad():
+    results = yolo_model(str(Path(INTERMEDIATE) / f"{FRAME_IDX:05d}.jpeg"))
+torch.backends.cuda.matmul.allow_tf32, torch.backends.cudnn.allow_tf32 = _tf32
+det = results[0].boxes
+xyxy_all = det.xyxy.cpu().numpy()
+conf_all = det.conf.cpu().numpy()
+keep = dedup_boxes(xyxy_all, conf_all)
+n_dup = len(xyxy_all) - len(keep)
+n_seed = 0
 with torch.no_grad():
     with torch.autocast(device_type="cuda", dtype=torch.bfloat16):
-        FRAME_IDX = 0
-        results = yolo_model(str(Path(INTERMEDIATE) / f"{FRAME_IDX:05d}.jpeg"))
-        det = results[0].boxes
-        xyxy_all = det.xyxy.cpu().numpy()
-        conf_all = det.conf.cpu().numpy()
-        keep = dedup_boxes(xyxy_all, conf_all)
-        n_dup = len(xyxy_all) - len(keep)
-        n_seed = 0
         for obj_id, k in enumerate(keep):
             sam2_model.add_new_points_or_box(
                 inference_state=inference_state, frame_idx=FRAME_IDX, obj_id=obj_id,
