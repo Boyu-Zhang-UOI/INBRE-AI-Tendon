@@ -5,11 +5,15 @@ Fully reproducible training recipe for the shipped detector weights
 
 ## Dataset
 
-200 slices sampled evenly (seed 42) from five micro-CT scans — P21(1), P21(4),
-P21(3), P50_1, P50_3 — with all 30 validation slices excluded by index.
-`manifest.csv` records every training image's source scan, slice index, and
-prelabel count. Slices were preprocessed exactly as in the pipeline
-(percentile 8-bit conversion + Laplacian sharpening).
+200 slices sampled at even, jittered intervals (seed 42) along five micro-CT
+scans: P21(1), P21(4) and the P50_3 SR reconstruction (45 each), P50_1 (40) and
+P21(3) (25), with all validation slices excluded by index. `manifest.csv`
+records every training image's source scan, slice index, and prelabel count.
+Slices were converted to 8 bits with a 0.5–99.5 percentile contrast stretch and
+sharpened by subtracting their 3×3 Laplacian (`sample_prelabel.py`). This is
+close to, but not the same as, the pipeline's preprocessing (16-bit values
+divided by 256 and an 8-neighbour sharpening kernel); the detector is evaluated
+on pipeline-preprocessed slices (`../validation/`).
 
 Bounding-box labels were produced by the previous detector (trained on manual
 annotations) and used after visual spot checks — model-assisted labeling

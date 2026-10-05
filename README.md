@@ -14,6 +14,7 @@ The pipeline takes a sequence of micro-CT scans as input and produces (1) a vide
 | `scripts/run_pipeline.py` | Headless port of the pipeline notebook with per-stage timing, for running on a local GPU workstation instead of Colab |
 | `training/` | Reproducible training recipe: sampling manifest, prelabeling and training scripts |
 | `validation/` | Validation suite that produces the reported metrics, plus its results |
+| `analysis/` | Downstream analyses from the paper: fascicle morphometrics, winding, and detector adaptation to an unseen scan |
 | `LICENSE.txt` | MIT License |
 
 ## Prerequisites
@@ -21,7 +22,7 @@ The pipeline takes a sequence of micro-CT scans as input and produces (1) a vide
 - The input data should be a **zip file** containing a sequence of micro-CT slices. **TIFF, BMP, PNG, and JPEG** are accepted (8- or 16-bit); scanner preview files (e.g. `*_spr.tif`) and any frame whose size differs from the stack are skipped automatically. The images should be named/ordered numerically, with the first image as the starting point and the last image as the ending point.
 - The program runs in **Google Colab** and requires a GPU runtime. The free tier of Google Colab provides a T4 GPU, which is sufficient; large datasets may require more runtime than the free tier permits.
 
-To get started, download [`TrackingTendonFibers.ipynb`](https://github.com/Boyu-Zhang-UOI/INBRE-AI-Tendon/blob/main/TrackingTendonFibers.ipynb) and upload it to your Google Drive to run in Google Colab.
+To get started, download [`TrackingTendonFibers.ipynb`](https://github.com/Boyu-Zhang-UOI/INBRE-AI-Tendon/blob/main/TrackingTendonFibers.ipynb) and upload it to your Google Drive to run in Google Colab, or open it directly with the "Open in Colab" badge at the top of the notebook.
 
 ## Usage
 
@@ -30,16 +31,18 @@ To get started, download [`TrackingTendonFibers.ipynb`](https://github.com/Boyu-
 3. Run each cell individually (which can help isolate potential errors), or use "Run all". If you use "Run all", check the customizable settings first — they are under the "User Customization" cell near the top of the notebook:
    1. `frameSkip`: process 1 out of every `frameSkip` frames to reduce input size. Set `frameSkip = 1` to process every frame, `2` for every other frame, etc.
    2. `fps`: frames per second of the output video; adjust based on how many frames you are processing.
-   3. `SCALE_FACTOR`: dimensions of the output video relative to the input. `SCALE_FACTOR = 1` keeps the input size; `2` doubles it.
-   4. `scale_unit`: the unit and "stretch" factor of the z-axis in the final reconstruction. Must be `"millimeters"`, `"microns"`, or `"pixels"`.
+   3. `SCALE_FACTOR`: size of the output video and annotated frames relative to the input. `SCALE_FACTOR = 1` keeps the input size; `2` doubles it. Keep it at 1 if you will measure the reconstruction, because the micrometre calibration below refers to the original pixel size.
+   4. `scale_unit`: unit of the axes in the interactive 3D preview at the end of the notebook: `"microns"`, `"millimeters"`, or `"pixels"`. It does not change the saved files.
+   5. `MICRONS_PER_PIXEL`: in-plane voxel size of your scan, in µm per pixel (default 9).
+   6. `MICRONS_PER_ZSTEP`: slice spacing of your scan, in µm per slice (default 9). With `MICRONS_PER_PIXEL` it calibrates the point cloud and mesh, which are written in micrometres.
 4. When the "Upload Input" cell runs, click the "Choose File" button below the cell and select the zip file of your input data.
 5. Everything beyond this point runs without user interaction as long as all cells are prompted to run.
 6. To retrieve the output, click the folder icon in the left toolbar and open the `OUTPUT` folder, which contains:
-   - every processed frame,
+   - every annotated frame (`AnnotatedNNNNN.jpeg`),
    - the annotated video at your specified fps,
-   - `Point3DReconstruction.ply` — the 3D point cloud of the fascicles,
+   - `Point3DReconstruction.ply` — the 3D point cloud of the fascicles in micrometres; the fourth column (`blob_id`) identifies the fascicle each point belongs to,
    - `Mesh3DReconstruction.ply` — a mesh surrounding the fascicles,
-   - `points3D.npz` — an archive of all reconstruction points, useful if you want to create your own mesh from the point cloud.
+   - `points3D.npz` — the segmentation mask of every processed frame (all fascicles combined into one binary mask per frame).
 
    The `.ply` files can be opened in any application that supports the PLY format (e.g., Blender, MeshLab).
 
@@ -48,6 +51,10 @@ To get started, download [`TrackingTendonFibers.ipynb`](https://github.com/Boyu-
 The reported metrics come from the `validation/` suite, which is the authoritative one: `validation/gt_register.py` registers the hand-drawn masks back onto the original image frames and `validation/tendon_eval.py` scores detection and segmentation against them on 30 randomly selected slices. Results and a description of the method are in [`validation/README.md`](validation/README.md).
 
 `DesignValidation.ipynb` is the interactive Colab version of the same check, kept for exploration and visual overlays. It aligns ground truth and prediction by cropping rather than registration, so its numbers differ from the reported ones.
+
+## Analysis
+
+The scripts in `analysis/` reproduce the downstream analyses in the paper from the pipeline's point cloud: per-fascicle cross-sectional area profiles and equivalent diameters, the winding of adjacent fascicles, and the leave-one-scan-out experiment that measures how many labelled slices the detector needs to adapt to a new scan. See [`analysis/README.md`](analysis/README.md).
 
 ## Running without Colab
 
@@ -65,7 +72,7 @@ If you encounter an error when importing libraries, it is most likely a runtime 
 
 ## Declaration of generative AI use
 
-Portions of the code in this repository were developed with the assistance of generative AI tools: GitHub Copilot (code completion in the original pipeline notebook) and Claude by Anthropic (the headless script in `scripts/`, the `validation/` and `training/` scripts, and the fixes for duplicate seed detections and the point-cloud z step). All AI-assisted code was reviewed, tested, and edited by the authors, who take full responsibility for the content of this repository.
+Portions of the code in this repository were developed with the assistance of generative AI tools: GitHub Copilot (code completion in the original pipeline notebook) and Claude by Anthropic (the headless script in `scripts/`, the `validation/`, `training/` and `analysis/` scripts, and the fixes for duplicate seed detections and the point-cloud z step). All AI-assisted code was reviewed, tested, and edited by the authors, who take full responsibility for the content of this repository.
 
 ## License
 

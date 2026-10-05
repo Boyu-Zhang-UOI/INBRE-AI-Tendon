@@ -1,12 +1,13 @@
 """Sample training slices from the raw rec stacks (excluding validation slices),
-preprocess like the pipeline (8-bit + Laplacian sharpen), and prelabel them for
-human review (model-assisted labeling).
+preprocess them (percentile 8-bit conversion + Laplacian sharpening, close to but
+not identical with the pipeline's preprocessing), and prelabel them
+(model-assisted labeling).
 
-IMPORTANT - provenance: the labels released in this repository were produced by
+IMPORTANT - provenance: the labels used to train the shipped weights were produced by
 the PREVIOUS detector, the one that existed before the documented retraining,
 not by the shipped fiberYOLO26Weights.pt that train_yolo.py then produced from
-them. Point PRELABEL_WEIGHTS at that prior checkpoint to reproduce the released
-training set; using the shipped weights here would prelabel with a model trained
+them. Point PRELABEL_WEIGHTS at that prior checkpoint to reproduce the training set
+behind the shipped weights; using the shipped weights here would prelabel with a model trained
 on this very set and yield different labels.
 
 Outputs under ~/tendon/trainset/:
