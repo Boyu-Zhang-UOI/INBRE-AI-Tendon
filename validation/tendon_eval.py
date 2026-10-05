@@ -114,9 +114,7 @@ def ap_from_flags(flags, n_gt):
     fp = np.cumsum(1 - flags)
     rec = tp / n_gt if n_gt else tp * 0
     prec = tp / np.maximum(tp + fp, 1)
-    ap = 0.0
-    for i in range(1, len(rec)):
-        ap += (rec[i] - rec[i - 1]) * prec[i]
+    ap = float(np.sum(np.diff(rec, prepend=0.0) * prec))   # all-point AP: recall steps from 0
     p = prec[-1] if len(prec) else 0.0
     r = rec[-1] if len(rec) else 0.0
     f1 = 2 * p * r / (p + r) if p + r > 0 else 0.0

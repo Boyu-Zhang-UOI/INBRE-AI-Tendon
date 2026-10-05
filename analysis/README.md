@@ -33,4 +33,4 @@ python analysis/loso_eval.py ~/tendon/runs/loso_P50_1_k5/weights/best.pt loso_k5
 python analysis/loso_eval.py fiberYOLO26Weights.pt shipped                          # dotted line
 ```
 
-The P50_1 rows give AP 0.10, 0.62, 0.69, 0.77 and 0.75 for k = 0, 5, 10, 20, 40, and 0.75 for the released detector. Each retraining takes about 90 s on one RTX 4000 Ada. The training images and labels are not in this repository; they are available from the corresponding author on request, as are the validation slices. Both LOSO scripts look for them under `$TENDON_HOME` (default `~/tendon`), in the layout used by `training/` and `validation/`.
+The P50_1 rows give AP 0.12, 0.64, 0.72, 0.80 and 0.77 for k = 0, 5, 10, 20, 40, and 0.77 for the released detector (F1 0.24, 0.78, 0.82, 0.88, 0.85; released 0.86). Each retraining takes about 90 s on one RTX 4000 Ada. The training images and labels are not in this repository; they are available from the corresponding author on request, as are the validation slices. Both LOSO scripts look for them under `$TENDON_HOME` (default `~/tendon`), in the layout used by `training/` and `validation/`.

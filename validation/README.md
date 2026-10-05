@@ -8,13 +8,13 @@ annotated ground truth (30 randomly selected micro-CT slices).
 | File | Description |
 |---|---|
 | `gt_register.py` | Registers the hand-drawn segmentation masks (drawn on cropped/zoomed canvases) back onto the original image frames via scale+translation search (zero-mean matched filter on a top-hat fascicle-likelihood map). Writes registered masks and per-image QC overlays. |
-| `tendon_eval.py` | Runs YOLO26 (repository weights, detections de-duplicated as in the pipeline) + SAM2 (hiera-large, box prompts, single-mask output) on the 30 validation images and scores against the registered ground truth. Reports detection precision/recall/F1/AP@0.5 and segmentation global IoU/Dice/pixel accuracy plus per-fascicle instance-matched IoU/Dice. |
+| `tendon_eval.py` | Runs YOLO26 (repository weights, detections de-duplicated as in the pipeline) + SAM2 (hiera-large, box prompts, single-mask output) on the 30 validation images and scores against the registered ground truth. Reports detection precision/recall/F1/AP@0.5 (all-point AP, averaged over images) and segmentation global IoU/Dice/pixel accuracy plus per-fascicle instance-matched IoU/Dice. |
 | `results/` | Output of the current run: summary, per-image CSV, and sample agreement overlays (green = model & annotator agree, orange = annotator only, blue = model only). |
 
 ## Current results
 
 ```
-Detection (YOLO26, IoU threshold 0.5):  AP=0.790  P=0.914  R=0.850  F1=0.879
+Detection (YOLO26, IoU threshold 0.5):  AP=0.815  P=0.914  R=0.850  F1=0.879
 Segmentation (SAM2, registered GT):     global IoU 0.637 ± 0.082, Dice 0.775 ± 0.061
                                         instance IoU 0.488 ± 0.135, Dice 0.625 ± 0.125
                                         506 of 528 annotated fascicles matched (95.8%)

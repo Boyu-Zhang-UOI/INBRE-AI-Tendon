@@ -31,6 +31,6 @@ NVIDIA RTX 4000 Ada.
 Held-out prelabel val split: mAP50 0.821, mAP50-95 0.726, P 0.801, R 0.755.
 On the 30 independently hand-annotated validation slices (see `../validation/`,
 detections de-duplicated as in the pipeline): detection P 0.914, R 0.850,
-F1 0.879, AP 0.790; segmentation via SAM2 global IoU 0.637 ± 0.082,
+F1 0.879, AP 0.815; segmentation via SAM2 global IoU 0.637 ± 0.082,
 Dice 0.775 ± 0.061; per-fascicle matched IoU 0.488 ± 0.135, 506/528 fascicles
 recovered (95.8%).
