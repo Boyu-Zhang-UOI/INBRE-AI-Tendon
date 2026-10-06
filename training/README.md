@@ -16,7 +16,7 @@ divided by 256 and an 8-neighbour sharpening kernel); the detector is evaluated
 on pipeline-preprocessed slices (`../validation/`).
 
 Bounding-box labels were produced by the previous detector (trained on manual
-annotations) and used after visual spot checks — model-assisted labeling
+annotations) and used without manual correction: model-assisted labeling
 (`sample_prelabel.py`, confidence ≥ 0.25; mean 44.3 boxes/slice).
 
 ## Recipe
