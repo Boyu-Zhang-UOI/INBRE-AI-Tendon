@@ -12,6 +12,7 @@ checkpoints/sam2_hiera_large.pt; override with TENDONTRACK_WEIGHTS and
 SAM2_CHECKPOINT.
 """
 import os, sys, json, time
+from collections import Counter
 import cv2
 import numpy as np
 import torch
@@ -85,22 +86,27 @@ def tock(stage):
 tick("1_convert")
 inputFiles = sorted(f for f in os.listdir(INPUT)
                     if f.lower().endswith((".tif", ".tiff", ".bmp", ".png", ".jpg", ".jpeg")))
-# skip scanner previews and odd-sized frames (they corrupt SAM2's video dims)
-ref = None
-clean = []
+# skip scanner previews and odd-sized frames (they corrupt SAM2's video dims).
+# The stack size is the most common image size, so projections or previews that a
+# scanner export folder may contain cannot define it.
+sizes = {}
 for f in inputFiles:
     if "_spr" in f.lower():
         print("skipping preview file:", f); continue
     try:
-        sz = Image.open(os.path.join(INPUT, f)).size
+        sizes[f] = Image.open(os.path.join(INPUT, f)).size
     except Exception:
-        print("skipping unreadable:", f); continue
-    if ref is None:
-        ref = sz
-    if sz != ref:
-        print(f"skipping {f}: size {sz} != stack {ref}"); continue
+        print("skipping unreadable:", f)
+ref = Counter(sizes.values()).most_common(1)[0][0] if sizes else None
+clean = []
+for f in inputFiles:
+    if f not in sizes:
+        continue
+    if sizes[f] != ref:
+        print(f"skipping {f}: size {sizes[f]} != stack {ref}"); continue
     clean.append(f)
 inputFiles = clean
+print(f"input: {len(inputFiles)} slices of size {ref}", flush=True)
 for i, filename in enumerate(inputFiles):
     if i % frameSkip != 0:
         continue

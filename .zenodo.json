@@ -1,7 +1,7 @@
 {
   "title": "TendonTrack: an automated machine-learning pipeline for identification, tracking, and 3D reconstruction of tendon fascicles from micro-CT images",
   "upload_type": "software",
-  "version": "v1.0",
+  "version": "v1.0.1",
   "description": "<p>TendonTrack is an open-source pipeline that automates fascicle identification, tracking, and 3D reconstruction from contrast-enhanced micro-CT image stacks. A fine-tuned Ultralytics YOLO26 detector localizes fascicles in the first slice, Meta's SAM2 video predictor segments them and propagates instance masks through the stack, and the masks are reconstructed into a point cloud and a Poisson surface mesh (PLY). The release contains the Colab notebook, a headless pipeline script, the trained detector weights, the training recipe (sampling manifest and scripts), the validation suite with its results, and the analysis scripts for fascicle morphometrics, winding, and detector adaptation to an unseen scan.</p>",
   "creators": [
     {"name": "Karl, Jacob", "affiliation": "University of Idaho"},
