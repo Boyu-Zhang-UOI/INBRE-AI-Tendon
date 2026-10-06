@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Ian McCall, Aneesha Shrestha, Andrew Araujo
+Copyright (c) 2026 Jacob Karl, Ian McCall, Aneesha Shrestha, Adi Gurevich, Andrew Araujo, Nathan R. Schiele, Boyu Zhang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

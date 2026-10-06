@@ -1,0 +1,27 @@
+{
+  "title": "TendonTrack: an automated machine-learning pipeline for identification, tracking, and 3D reconstruction of tendon fascicles from micro-CT images",
+  "upload_type": "software",
+  "version": "v1.0",
+  "description": "<p>TendonTrack is an open-source pipeline that automates fascicle identification, tracking, and 3D reconstruction from contrast-enhanced micro-CT image stacks. A fine-tuned Ultralytics YOLO26 detector localizes fascicles in the first slice, Meta's SAM2 video predictor segments them and propagates instance masks through the stack, and the masks are reconstructed into a point cloud and a Poisson surface mesh (PLY). The release contains the Colab notebook, a headless pipeline script, the trained detector weights, the training recipe (sampling manifest and scripts), the validation suite with its results, and the analysis scripts for fascicle morphometrics, winding, and detector adaptation to an unseen scan.</p>",
+  "creators": [
+    {"name": "Karl, Jacob", "affiliation": "University of Idaho"},
+    {"name": "McCall, Ian", "affiliation": "University of Idaho"},
+    {"name": "Shrestha, Aneesha", "affiliation": "University of Idaho"},
+    {"name": "Gurevich, Adi", "affiliation": "University of Idaho"},
+    {"name": "Araujo, Andrew", "affiliation": "University of Idaho"},
+    {"name": "Schiele, Nathan R.", "affiliation": "University of Idaho"},
+    {"name": "Zhang, Boyu", "affiliation": "University of Idaho"}
+  ],
+  "keywords": [
+    "tendon",
+    "micro-CT imaging",
+    "object detection",
+    "segmentation",
+    "3D reconstruction",
+    "YOLO",
+    "SAM2"
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "notes": "Partially supported by the INBRE program, NIH Grant P20GM103408 (National Institute of General Medical Sciences)."
+}
