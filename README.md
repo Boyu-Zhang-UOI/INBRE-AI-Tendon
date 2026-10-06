@@ -1,5 +1,7 @@
 # TendonTrack
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23180352.svg)](https://doi.org/10.5281/zenodo.23180352)
+
 **TendonTrack** is an automated machine-learning pipeline for identifying, tracking, and 3D reconstruction of tendon fascicles from micro-CT images of rat tails. (Repository: INBRE-AI-Tendon.)
 
 The pipeline takes a sequence of micro-CT scans as input and produces (1) a video of the scans with the fascicles annotated in color and (2) a 3D reconstruction of the tendon fascicles. Object detection is performed with a custom-trained Ultralytics YOLO26 model, and segmentation/tracking with Meta's SAM2.
