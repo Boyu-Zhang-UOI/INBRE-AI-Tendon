@@ -3,7 +3,7 @@
 Faithful to the notebook's processing logic (conversion, sharpening, video,
 YOLO seed detection, SAM2 video propagation, point cloud, Poisson mesh);
 only Colab-specific I/O and interactive plotting are removed, plus
-offload_video_to_cpu=True so 729 full-res frames fit in VRAM.
+offload_video_to_cpu=True so a 727-slice full-resolution stack fits in VRAM.
 
 Usage: python run_pipeline.py <input_dir_with_slices> <output_root>
 
@@ -253,8 +253,9 @@ masks = np.load(reconstructionPath)["arr_0"]
 z_step_slices = frameSkip   # each processed frame is frameSkip slices deep; scaled to um by MICRONS_PER_ZSTEP below
 depth = 0
 points = []
-prev_uint8, curr_uint8, after_uint8 = masks[0], masks[1], masks[2]
 for index in range(1, len(masks) - 1):
+    # the current frame and its two neighbours; bbox_list[index] below is the box of this same frame
+    prev_uint8, curr_uint8, after_uint8 = masks[index - 1], masks[index], masks[index + 1]
     for obj_idx, (obj_id, bbox_list) in enumerate(targets.items()):
         if index >= len(bbox_list):
             continue
@@ -275,8 +276,6 @@ for index in range(1, len(masks) - 1):
                 p = point[0]
                 points.append([p[0], p[1], depth, obj_idx])
     depth += z_step_slices
-    prev_uint8, curr_uint8 = curr_uint8, after_uint8
-    after_uint8 = masks[index + 1]
 
 points = np.array(points, dtype=np.float32)
 points[:, 0] *= MICRONS_PER_PIXEL

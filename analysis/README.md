@@ -16,10 +16,10 @@ For the 727-slice example stack (`scripts/run_pipeline.py`, default settings), a
 
 ```bash
 python analysis/morphometrics.py RUN/OUTPUT/Point3DReconstruction.ply out --exclude 23,28,29
-# mean equivalent diameter 202.0 +/- 48.7 um (n = 27), segment 6516 um long
+# mean equivalent diameter 202.4 +/- 48.7 um (n = 27), segment 6516 um long
 python analysis/winding.py RUN/OUTPUT/Point3DReconstruction.ply out/twist
-# BEST 16,17: window slices 117-267, total rotation -139 deg
-python analysis/render_winding_pair.py RUN/OUTPUT/Point3DReconstruction.ply out/tube 16 17 117 267
+# BEST 16,17: window slices 157-307, total rotation -139 deg
+python analysis/render_winding_pair.py RUN/OUTPUT/Point3DReconstruction.ply out/tube 16 17 157 307
 ```
 
 `render_winding_pair.py` shows the axial axis at 0.6 of its true length (`--z-display`), as in Figure 3B. It needs Open3D with offscreen rendering.
