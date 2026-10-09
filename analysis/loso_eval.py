@@ -124,7 +124,7 @@ for f in sorted(os.listdir(ORIG)):
     gtb = load_gt_boxes(base, W, H)
     if gtb is None or not len(gtb):
         continue
-    r = yolo(os.path.join(ORIG, f), verbose=False, conf=CONF)[0]
+    r = yolo(os.path.join(ORIG, f), verbose=False, conf=CONF, nms=False)[0]   # NMS-free YOLO26 head, as in the pipeline
     bx, cf = r.boxes.xyxy.cpu().numpy(), r.boxes.conf.cpu().numpy()
     if DEDUP > 0:
         keep = dedup_boxes(bx, cf, DEDUP)

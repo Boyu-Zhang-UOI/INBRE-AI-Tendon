@@ -165,7 +165,7 @@ for f in names:
     img_bgr = cv2.imread(os.path.join(ORIG, f))
     H, W = img_bgr.shape[:2]
 
-    r = yolo(os.path.join(ORIG, f), verbose=False)[0]
+    r = yolo(os.path.join(ORIG, f), verbose=False, nms=False)[0]   # NMS-free YOLO26 head, as in the pipeline
     boxes = r.boxes.xyxy.cpu().numpy()
     confs = r.boxes.conf.cpu().numpy()
     keep = dedup_boxes(boxes, confs)          # same seed de-duplication as the pipeline

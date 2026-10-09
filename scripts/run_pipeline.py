@@ -172,10 +172,12 @@ INTERMEDIATE_PATHS = sorted(
 FRAME_IDX = 0
 # Detection runs at full precision, outside the SAM2 autocast context, so the seed
 # boxes are exactly those of the validated detector (validation/tendon_eval.py).
+# nms=False keeps YOLO26's NMS-free (end-to-end) head, with which the detector was
+# validated; recent Ultralytics releases otherwise run YOLO26 through its NMS head.
 _tf32 = (torch.backends.cuda.matmul.allow_tf32, torch.backends.cudnn.allow_tf32)
 torch.backends.cuda.matmul.allow_tf32, torch.backends.cudnn.allow_tf32 = False, True   # PyTorch defaults, as in validation
 with torch.no_grad():
-    results = yolo_model(str(Path(INTERMEDIATE) / f"{FRAME_IDX:05d}.jpeg"))
+    results = yolo_model(str(Path(INTERMEDIATE) / f"{FRAME_IDX:05d}.jpeg"), nms=False)
 torch.backends.cuda.matmul.allow_tf32, torch.backends.cudnn.allow_tf32 = _tf32
 det = results[0].boxes
 xyxy_all = det.xyxy.cpu().numpy()

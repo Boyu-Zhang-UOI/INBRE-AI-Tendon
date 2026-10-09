@@ -88,7 +88,7 @@ for key, d, f, sl in picked:
     name = f"{key}_rec{sl:06d}"
     cv2.imwrite(f"{OUT}/images/{name}.jpg", rgb, [cv2.IMWRITE_JPEG_QUALITY, 95])
 
-    r = yolo(rgb, verbose=False)[0]
+    r = yolo(rgb, verbose=False, nms=False)[0]   # NMS-free YOLO26 head, as in the pipeline
     H, W = rgb.shape[:2]
     lines = []
     for b, c in zip(r.boxes.xyxy.cpu().numpy(), r.boxes.conf.cpu().numpy()):

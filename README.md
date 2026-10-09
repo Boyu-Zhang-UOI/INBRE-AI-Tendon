@@ -22,6 +22,7 @@ The pipeline takes a sequence of micro-CT scans as input and produces (1) a vide
 ## Prerequisites
 
 - The input data should be a **zip file** containing a sequence of micro-CT slices. **TIFF, BMP, PNG, and JPEG** are accepted (8- or 16-bit); scanner preview files (e.g. `*_spr.tif`) and any frame whose size differs from the stack (the most common image size in the folder) are skipped automatically, so projection and preview images in a scanner export folder do not interfere. The images should be named/ordered numerically, with the first image as the starting point and the last image as the ending point.
+- Detection uses YOLO26's NMS-free head (every detector call passes `nms=False`), as in validation. Recent Ultralytics releases otherwise run YOLO26 through its NMS head, which returns different boxes. Tested with Ultralytics 8.4.120 (the version used for the paper) and 8.4.174.
 - The program runs in **Google Colab** and requires a GPU runtime. The free tier of Google Colab provides a T4 GPU, which is sufficient; large datasets may require more runtime than the free tier permits.
 
 To get started, download [`TrackingTendonFibers.ipynb`](https://github.com/Boyu-Zhang-UOI/INBRE-AI-Tendon/blob/main/TrackingTendonFibers.ipynb) and upload it to your Google Drive to run in Google Colab, or open it directly with the "Open in Colab" badge at the top of the notebook.
