@@ -75,7 +75,7 @@ If you encounter an error when importing libraries, it is most likely a runtime 
 
 ## Declaration of generative AI use
 
-Portions of the code in this repository were developed with the assistance of generative AI tools: GitHub Copilot (code auto-completion in the original pipeline notebook) and Claude by Anthropic (the headless script in `scripts/` and the `validation/`, `training/` and `analysis/` scripts). All AI-assisted code was reviewed, tested, and edited by the authors, who take full responsibility for the content of this repository.
+Portions of the code in this repository were developed with the assistance of generative AI tools: GitHub Copilot (code completion in the original pipeline notebook) and Claude by Anthropic (the headless script in `scripts/` and the `validation/`, `training/` and `analysis/` scripts). All AI-assisted code was reviewed, tested, and edited by the authors, who take full responsibility for the content of this repository.
 
 ## License
 
