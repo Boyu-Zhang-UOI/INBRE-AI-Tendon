@@ -75,7 +75,7 @@ If you encounter an error when importing libraries, it is most likely a runtime 
 
 ## Declaration of generative AI use
 
-Portions of the code in this repository were developed with the assistance of generative AI tools: GitHub Copilot (code completion in the original pipeline notebook) and Claude by Anthropic (the headless script in `scripts/`, the `validation/`, `training/` and `analysis/` scripts, and the fixes for duplicate seed detections and the point-cloud z step). All AI-assisted code was reviewed, tested, and edited by the authors, who take full responsibility for the content of this repository.
+Portions of the code in this repository were developed with the assistance of generative AI tools: GitHub Copilot (code completion in the original pipeline notebook) and Claude by Anthropic (the headless script in `scripts/`, the `validation/`, `training/` and `analysis/` scripts, and pipeline fixes: duplicate seed detections, the input stack size, the point-cloud z step and frame order, and the NMS-free detector setting). All AI-assisted code was reviewed, tested, and edited by the authors, who take full responsibility for the content of this repository.
 
 ## License
 
