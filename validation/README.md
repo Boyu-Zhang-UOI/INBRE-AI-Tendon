@@ -35,7 +35,7 @@ differences as well as model error.
 
 ## Running
 
-Both scripts read paths from constants at the top of the file — edit them to
+Both scripts read paths from constants at the top of the file; edit them to
 match your layout, then:
 
 ```

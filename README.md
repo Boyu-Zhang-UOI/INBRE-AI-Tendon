@@ -31,7 +31,7 @@ To get started, download [`TrackingTendonFibers.ipynb`](https://github.com/Boyu-
 
 1. Open the notebook in Google Colab.
 2. Connect to a GPU: click the drop-down menu next to the "Reconnect" button, choose "Change runtime type", and select a GPU.
-3. Run each cell individually (which can help isolate potential errors), or use "Run all". If you use "Run all", check the customizable settings first — they are under the "User Customization" cell near the top of the notebook:
+3. Run each cell individually (which can help isolate potential errors), or use "Run all". If you use "Run all", check the customizable settings first; they are under the "User Customization" cell near the top of the notebook:
    1. `frameSkip`: process 1 out of every `frameSkip` frames to reduce input size. Set `frameSkip = 1` to process every frame, `2` for every other frame, etc.
    2. `fps`: frames per second of the output video; adjust based on how many frames you are processing.
    3. `SCALE_FACTOR`: size of the output video and annotated frames relative to the input. `SCALE_FACTOR = 1` keeps the input size; `2` doubles it. Keep it at 1 if you will measure the reconstruction, because the micrometre calibration below refers to the original pixel size.
@@ -43,9 +43,9 @@ To get started, download [`TrackingTendonFibers.ipynb`](https://github.com/Boyu-
 6. To retrieve the output, click the folder icon in the left toolbar and open the `OUTPUT` folder, which contains:
    - every annotated frame (`AnnotatedNNNNN.jpeg`),
    - the annotated video at your specified fps,
-   - `Point3DReconstruction.ply` — the 3D point cloud of the fascicles in micrometres; the fourth column (`blob_id`) identifies the fascicle each point belongs to,
-   - `Mesh3DReconstruction.ply` — a mesh surrounding the fascicles,
-   - `points3D.npz` — the segmentation mask of every processed frame (all fascicles combined into one binary mask per frame).
+   - `Point3DReconstruction.ply`: the 3D point cloud of the fascicles in micrometres; the fourth column (`blob_id`) identifies the fascicle each point belongs to,
+   - `Mesh3DReconstruction.ply`: a mesh surrounding the fascicles,
+   - `points3D.npz`: the segmentation mask of every processed frame (all fascicles combined into one binary mask per frame).
 
    The `.ply` files can be opened in any application that supports the PLY format (e.g., Blender, MeshLab).
 
